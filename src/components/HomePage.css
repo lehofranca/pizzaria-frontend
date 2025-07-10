@@ -1,0 +1,77 @@
+/* Container geral */
+.homepage {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b0f1a 0%, #1a2238 100%);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+/* Partículas ficam por trás, então nada a ajustar aqui para elas */
+
+/* Título principal */
+.title {
+  position: relative;
+  z-index: 10;
+  font-size: 2.8rem;
+  color: #ff6e40;
+  text-shadow:
+    0 0 5px #ff6e40,
+    0 0 10px #ff6e40,
+    0 0 20px #ff6e40,
+    0 0 40px #ff6e40;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Botão de call to action (exemplo) */
+.call-to-action {
+  margin-top: 150px;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+.btn-peca-agora {
+  background: linear-gradient(90deg, #ff3c00, #ff7e00);
+  color: white;
+  padding: 15px 40px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow:
+    0 0 10px #ff4500,
+    0 0 20px #ff7e00,
+    0 0 30px #ff3c00;
+  animation: blinkGlow 2s infinite alternate;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.btn-peca-agora:hover {
+  transform: scale(1.1);
+  box-shadow:
+    0 0 20px #ff4500,
+    0 0 40px #ff7e00,
+    0 0 60px #ff3c00;
+}
+
+@keyframes blinkGlow {
+  0% {
+    box-shadow:
+      0 0 10px #ff4500,
+      0 0 20px #ff7e00,
+      0 0 30px #ff3c00;
+  }
+  100% {
+    box-shadow:
+      0 0 30px #ff7e00,
+      0 0 40px #ff3c00,
+      0 0 50px #ff7e00;
+  }
+}

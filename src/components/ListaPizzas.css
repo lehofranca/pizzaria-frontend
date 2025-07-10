@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+.lista-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pizza-card {
+  background: linear-gradient(to bottom right, #ff4d4d, #ff944d);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.pizza-card:hover {
+  transform: scale(1.05);
+}
+
+.pizza-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.pizza-card p {
+  margin: 5px 0;
+}
+
+.pizza-card .preco {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btn-detalhes {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #ff4d4d;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-detalhes:hover {
+  background-color: #ffe6e6;
+}

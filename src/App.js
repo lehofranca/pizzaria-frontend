@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import ListaPizzas from './components/ListaPizzas';
+import DetalhesPizza from './components/DetalhesPizza';
+import AdminLogin from './pages/admin/AdminLogin';
+import AdminDashboard from './pages/admin/AdminDashboard';
+import CadastroPizza from './components/CadastroPizza';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/pizzas" element={<ListaPizzas />} />
+        <Route path="/pizza/:id" element={<DetalhesPizza />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/cadastro-pizza" element={<CadastroPizza />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
