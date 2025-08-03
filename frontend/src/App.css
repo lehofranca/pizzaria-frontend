@@ -1,0 +1,39 @@
+/* Fonte Orbitron import no index.html ou via @import no CSS */
+/* Título futurista na HomePage */
+.homepage-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #91a7ff;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 10px #91a7ff,
+    0 0 20px #5a76b9,
+    0 0 30px #5579ff,
+    0 0 40px #364f9a;
+  margin-bottom: 40px;
+  user-select: none;
+}
+
+/* Botão estilizado futurista na HomePage */
+.homepage-button {
+  background: linear-gradient(135deg, #5579ff, #89a1ff);
+  padding: 14px 32px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(85, 121, 255, 0.8);
+  transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+  display: inline-block;
+  user-select: none;
+}
+
+.homepage-button:hover {
+  background: linear-gradient(135deg, #3f5fe8, #6f8fff);
+  box-shadow: 0 8px 25px rgba(63, 95, 232, 1);
+  transform: translateY(-3px);
+}

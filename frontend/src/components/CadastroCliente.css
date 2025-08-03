@@ -1,0 +1,63 @@
+.cadastro-cliente-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f0f7f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #5ba99a;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cadastro-cliente-form h2 {
+  text-align: center;
+  color: #3b7264;
+}
+
+.cadastro-cliente-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.cadastro-cliente-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #b7ccc6;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cadastro-cliente-form .erro {
+  color: #b33a3a;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cadastro-cliente-form .sucesso {
+  color: #2f7a4a;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cadastro-cliente-form button {
+  margin-top: 20px;
+  width: 100%;
+  background: #3b7264;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cadastro-cliente-form button:hover {
+  background: #2f5b4a;
+}

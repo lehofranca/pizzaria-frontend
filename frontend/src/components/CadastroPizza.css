@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.form-cadastro {
+  max-width: 450px;
+  margin: 40px auto;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  padding: 30px 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(31, 28, 44, 0.6);
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  color: #ffd369;
+  text-shadow: 0 0 8px #ffd369a1;
+}
+
+.form-label {
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #f0e6ffcc;
+  user-select: none;
+}
+
+.form-input {
+  margin-top: 6px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 0 0 5px #fff3;
+}
+
+.form-input::placeholder {
+  color: #ddd;
+  font-style: italic;
+}
+
+.form-input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px 2px #ffd369;
+}
+
+.form-button {
+  margin-top: 28px;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 15px rgba(238, 9, 121, 0.7);
+  user-select: none;
+}
+
+.form-button:hover:not(:disabled) {
+  box-shadow: 0 10px 25px rgba(238, 9, 121, 0.9);
+  transform: scale(1.05);
+}
+
+.form-button:disabled {
+  background: #555;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.form-message {
+  margin-top: 18px;
+  padding: 12px 15px;
+  background-color: #2a2a3d;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #ffd369;
+  text-shadow: 0 0 5px #ffd369a1;
+  user-select: none;
+  box-shadow: inset 0 0 10px #ffd3697a;
+}
+.form-message.error {
+  background-color: #ff4d4d;
+  color: #fff;
+  box-shadow: inset 0 0 10px rgba(255, 77, 77, 0.7);
+}

@@ -1,0 +1,45 @@
+/* Container principal do header */
+.header {
+  background-color: #3b7264;           /* Cor de fundo verde escuro */
+  padding: 1rem 2rem;                  /* Espaçamento interno vertical e horizontal */
+  display: flex;                       /* Usa flexbox para alinhamento dos itens */
+  justify-content: space-between;     /* Espaça título e carrinho nas extremidades */
+  align-items: center;                 /* Centraliza verticalmente os itens */
+  font-family: 'Poppins', sans-serif; /* Fonte estilizada da família Poppins */
+  font-weight: bold;                   /* Texto em negrito para destaque */
+  font-size: 1.2rem;                   /* Tamanho da fonte do texto */
+  color: white;                       /* Cor branca para o texto */
+}
+
+/* Estilo dos links do header (título e carrinho) */
+.header-title,
+.header-cart {
+  color: white;              /* Cor branca para links */
+  text-decoration: none;     /* Remove o sublinhado padrão dos links */
+}
+
+/* Efeito hover para os links do header */
+.header-title:hover,
+.header-cart:hover {
+  text-decoration: underline; /* Sublinhado quando o mouse passa por cima */
+  cursor: pointer;             /* Cursor muda para mãozinha, indicando clique */
+}
+
+/* Estilo do ícone do carrinho */
+.header-cart i {
+  margin-right: 0.5rem;      /* Espaço à direita do ícone para separar do texto */
+}
+
+/* Ajustes para telas menores que 600px (celulares) */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;      /* Empilha título e carrinho verticalmente */
+    align-items: flex-start;     /* Alinha os itens à esquerda para melhor visual */
+    padding: 1rem;               /* Reduz o padding para economizar espaço */
+    font-size: 1rem;             /* Diminui o tamanho da fonte para caber melhor */
+  }
+
+  .header-cart {
+    margin-top: 0.5rem;          /* Espaço entre título e carrinho quando empilhados */
+  }
+}
